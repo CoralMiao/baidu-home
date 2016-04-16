@@ -1,0 +1,513 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#user,
+.bar,
+article,
+#mobile-footer,
+.mobile-logo {
+    display: none;
+}
+
+
+/*container*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    min-width: 810px;
+    min-height: 600px;
+    position: relative;
+}
+
+
+/*container end*/
+
+
+/*nav*/
+
+#nav,
+.hidenav {
+    overflow: hidden;
+    width: 493px;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+}
+
+.nav-ul a {
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    line-height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    color: #333;
+}
+
+.strong a {
+    font-weight: bold;
+}
+
+.strong a:hover,
+.no-bold a:hover {
+    color: #00c;
+}
+
+.more a {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    background: #38f;
+    border-bottom: 1px solid #38f;
+    text-decoration: none;
+    line-height: 24px;
+    height: 24px;
+    right: 12px;
+    width: 60px;
+    text-align: center;
+}
+
+.more a:hover {
+    color: #333;
+    background: #F9F9F9;
+}
+
+
+/*nav end*/
+
+
+/*wrapper*/
+
+#wrapper {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    top: 18%;
+}
+
+.logo img {
+    width: 270px;
+    height: 129px;
+}
+
+#form {
+    width: 640px;
+    margin: 20px auto;
+    height: 36px;
+}
+
+input {
+    border: 0;
+    outline: 0;
+}
+
+.span-input {
+    width: 539px;
+    height: 34px;
+    background: #ffffff;
+    /*border-top:1px solid #B8B8B8;
+    border-left:1px solid #B8B8B8;
+    border-bottom:1px solid #CCCCCC;*/
+    border: 1px solid #4791FF;
+    border-right: 0;
+    vertical-align: center;
+    float: left;
+}
+
+
+/*.span-input:hover{
+    border-top:1px solid #999999;
+    border-left:1px solid #999999;
+    border-bottom:1px solid #B3B3B3;
+}*/
+
+.input {
+    font-size: 100%;
+    width: 500px;
+    height: 22px;
+    margin: 6px 0 0 -20px;
+    vertical-align: center;
+}
+
+
+/*input end*/
+
+
+/*submit*/
+
+.span-submit {
+    float: left;
+    border-bottom: 1px solid transparent;
+    vertical-align: middle;
+}
+
+.submit {
+    height: 36px;
+    width: 100px;
+    font-size: 15px;
+    display: inline-block;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    color: white;
+    letter-spacing: 1px;
+    vertical-align: center;
+}
+
+.submit:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+    cursor: pointer;
+}
+
+
+/*submit end*/
+
+
+/*wrapper end*/
+
+#footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 44px;
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-link,
+.footer-text {
+    width: 720px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-link {
+    height: 15px;
+    margin: 0 auto;
+}
+
+.footer-link a {
+    padding: 0 10px;
+    color: blue;
+}
+
+.footer-text {
+    clear: both;
+    height: 20px;
+    margin-top: 5px;
+    color: #666;
+}
+
+.footer-text a {
+    color: #666;
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        background: #EEEFF0;
+        height: 1156px;
+        min-width: 0;
+        min-height: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    article,
+    #mobile-footer,
+    .mobile-logo {
+        display: block;
+    }
+    #nav,
+    #footer,
+    .logo {
+        display: none;
+    }
+    header {
+        height: 52px;
+    }
+    #user {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    #wrapper {
+        position: absolute;
+        top: 6%;
+    }
+    .mobile-logo img {
+        width: 175px;
+        height: 55px;
+    }
+    #form {
+        margin: 15px 10px;
+        height: 42px;
+        position: relative;
+    }
+    .span-input {
+        height: 40px;
+        width: 310px;
+        line-height: 40px;
+
+    }
+    .input {
+        margin: 0;
+        line-height: 28px;
+        padding-left: 7px;
+        height: 40px;
+        overflow: hidden;
+        width: 300px;
+    }
+    .submit {
+        width: 82px;
+        height: 42px;
+        line-height: 42px;
+    }
+    .bar {
+        width: 100%;
+        height: 42px;
+        display: block;
+        margin: 17px 0 0;
+        overflow: hidden;
+    }
+    .bar a {
+        display: block;
+        float: left;
+        width: 16%;
+        font-size: 12px;
+        color: #666;
+    }
+    .bar img {
+        width: 24px;
+        height: 24px;
+    }
+    .plus-title h2,
+    .hot-news h2,
+    .baidu-recommend h2 {
+        display: inline-block;
+        height: 40px;
+        text-align: left;
+        margin: 2px 14px 0;
+        position: relative;
+        font-size: 15px;
+        font-weight: normal;
+        color: #999;
+        line-height: 40px;
+    }
+    .span-tip {
+        float: right;
+        height: 38px;
+        line-height: 38px;
+        padding-left: 10px;
+        color: #262626;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+    }
+    .arrow-img {
+        padding-top: 10px;
+    }
+    .span-change {
+        position: relative;
+        display: block;
+        float: right;
+        padding: 5px 10px 0 5px;
+    }
+    .more-btn {
+        display: block;
+        float: right;
+        padding: 10px 10px 0;
+    }
+    .span-change {
+        display: block;
+        float: right;
+        padding-right: 20px;
+    }
+    article {
+        width: 95%;
+        position: relative;
+        top: 220px;
+        margin: 0 auto;
+    }
+    .address,
+    .hot-news {
+        background: #ffffff;
+    }
+    .address {
+        height: 120px;
+    }
+    .address a {
+        display: block;
+        float: left;
+        width: 25%;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        color: #262626;
+        font-size: 15px;
+    }
+    .hot-news {
+        width: 100%;
+        height: 205px;
+        margin: 8px auto;
+        font-size: 14px;
+    }
+    .hot-news li {
+        display: inline-block;
+        width: 43.5%;
+        height: 42px;
+        line-height: 42px;
+        vertical-align: top;
+        padding-left: 14px;
+    }
+    .hot {
+        color: #262626;
+    }
+    .hot-search {
+        clear: both;
+        text-align: right;
+        border-top: 1px solid #EEEFF0;
+    }
+    .hot-search a {
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        padding-right: 14px;
+        font-size: 14px;
+        color: #0058d2;
+    }
+    .news img {
+        width: 83px;
+        height: 50px;
+    }
+    .imgtitle {
+        font-size: 15px;
+        color: #000000;
+        display:block;
+        float: right;
+        padding-right: 45px;
+    }
+    .newsTitle {
+        line-height: 17px;
+        color: #000000;
+    }
+    .imgtime,
+    .time {
+        font-size: 15px;
+        color: #999;
+    }
+    .imgtime {
+        position: absolute;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+    .time {
+        float: right;
+        display: block;
+        padding-right: 5px;
+    }
+    .baidu-recommend {
+        clear: both;
+        height: 276px;
+        width: 100%;
+        background: #FFFFFF;
+    }
+    .baidu-more {
+        border: 0;
+    }
+    .news li {
+        border-bottom: 1px solid #f0f0f0;
+        padding: 0 2px;
+        font-size: 15px;
+    }
+    .news li:not(:first-child) {
+        line-height: 41px;
+    }
+    #manage {
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+        color: #333;
+        font-size: 14px;
+        margin-top: 8px;
+        background: #ffffff;
+    }
+    #mobile-footer {
+        clear: both;
+        position: absolute;
+        bottom: 15px;
+        width: 95%;
+        left: 2.5%;
+    }
+    .baidu-logo {
+        width: 15px;
+        height: 15px;
+    }
+    .bottom img {
+        padding-right: 3px;
+    }
+    .bottom li {
+        height: 33px;
+        line-height: 33px;
+        text-align: left;
+    }
+    .bottom li a {
+        position: relative;
+        display: block;
+        padding-left: 21px;
+        font-size: 13px;
+        color: #555;
+    }
+    .foot {
+        margin: 20px 28px 0;
+        text-align: center;
+    }
+    #switch{
+        height: 40px;
+    }
+    #switch a {
+        float: left;
+        width: 50%;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #dedede;
+        color: #555;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    #switch .fast{
+        border-right: 0;
+    }
+    .copyright {
+        display: block;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        padding: 12px 0 0 0;
+        color: #999;
+    }
+}
